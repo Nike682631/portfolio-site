@@ -8,10 +8,9 @@ const Logo = () => {
 
 
   return (
-    <div className="logo-container" ref={bgRef}>
+    <div className="logo-container">
       <img
         className="solid-logo"
-        ref={solidLogoRef}
         src={LogoS}
         alt="JavaScript,  Developer"
       />
