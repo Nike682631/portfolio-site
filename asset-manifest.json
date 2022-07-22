@@ -3,7 +3,7 @@
     "main.css": "./static/css/main.a31e3b41.css",
     "main.js": "./static/js/main.04452912.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
-    "static/media/Mainlogo.png": "static/media/Mainlogo.c8b9a6bcff26d8fdf289.png",
+    "static/media/Mainlogo.png": "./static/media/Mainlogo.c8b9a6bcff26d8fdf289.png",
     "static/media/logo-s.png": "./static/media/logo-s.439fbc6c94d338377600.png",
     "static/media/helvetica-neu.ttf": "./static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "./static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
