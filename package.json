@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://nike682631.github.io/portfolio-site/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -12,6 +11,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "firebase": "^9.9.0",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
