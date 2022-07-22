@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://nike682631.github.io/portfolio-site",
+  "homepage": "https://nike682631.github.io/portfolio-site/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
