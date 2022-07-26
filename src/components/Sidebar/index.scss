@@ -84,6 +84,12 @@
             content: 'ABOUT';
           }
         }
+
+        a.skills-link {
+          &:after {
+            content: 'SKILLS';
+          }
+        }
     
         a.portfolio-link {
           &:after {

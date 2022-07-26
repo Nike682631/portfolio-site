@@ -2,12 +2,26 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import { getDocs, collection } from 'firebase/firestore';
+import { getDocs, collection, deleteDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const Portfolio = () => { 
     const [letterClass, setLetterClass] = useState('text-animate');
     const [portfolio, setPortfolio] = useState([]);
+    const [user, setUser] = useState(null);
+    const auth = getAuth();
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if(user) {
+                setUser(user);
+            } else {
+                setUser(null);
+            }
+        })
+    }, []);
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -26,6 +40,11 @@ const Portfolio = () => {
     const getPortfolio = async () => {
         const querySnapshot = await getDocs(collection(db, 'portfolio'));
         setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
+        console.log(portfolio)
+    }
+
+    const deletePortfolioItem = async (item) => {
+        const querySnapshot = await deleteDoc(item);
     }
 
     console.log(portfolio);
@@ -48,6 +67,7 @@ const Portfolio = () => {
                                         className="btn"
                                         onClick={() => window.open(port.url)}
                                     >View</button>
+                                    {user ? <button className="btn" onClick={() => deletePortfolioItem(port)}>Delete</button> : <></>}
                                 </div>
                             </div>
                         )
