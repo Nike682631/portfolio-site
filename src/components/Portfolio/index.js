@@ -64,7 +64,7 @@ const Portfolio = () => {
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
                                     <button
-                                        className="btn"
+                                        className="btn btn-view"
                                         onClick={() => window.open(port.url)}
                                     >View</button>
                                     {user ? <button className="btn" onClick={() => deletePortfolioItem(port)}>Delete</button> : <></>}

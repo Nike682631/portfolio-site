@@ -116,3 +116,13 @@
       }
     }
   }
+
+  @media (max-width: 950px) {
+    .info-map {
+      visibility: hidden;
+    }
+    
+    .contact-page{
+      padding-left: 80vw;
+    }
+  }

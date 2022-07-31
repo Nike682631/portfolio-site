@@ -72,10 +72,20 @@
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
-
+    
     &:hover {
       background: #ffd700;
       color: #333;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-container {
+    visibility: hidden;
+  }
+  
+  .home-page{
+    padding-left: 80vw
   }
 }

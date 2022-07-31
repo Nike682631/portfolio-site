@@ -1,29 +1,39 @@
 .TextCloud {
-    width: 40%;
-    height: 100%;
-    top: 0;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-  }
+  width: 40%;
+  height: 100%;
+  top: 0;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+}
 
 .Tech {
-    color: #ffd700;
-  }
+  color: #ffd700;
+}
 
 .right {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    .tagcloud--item {
-        font-family: sans-serif;
-        color: white;
-        font-size: 25px;
-        margin: auto;
-        transition: 0.5s;
-        cursor: pointer;
-    }
+  .tagcloud--item {
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 950px) {
+  .TextCloud {
+    visibility: hidden;
+  }
+
+  .skills-page {
+    padding-left: 80vw;
+  }
 }
