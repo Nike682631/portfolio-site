@@ -50,7 +50,7 @@ const Skills = () => {
           </p>
           <p>
             You can check out my {' '}
-            <a className='Tech' target="_blank" href=https://drive.google.com/file/d/1_QnJf9fcYHlAamtFaF2geadEaLIDCxYE/view?usp=drivesdk">CV</a> here.
+            <a className='Tech' target="_blank" href="https://drive.google.com/file/d/1_QnJf9fcYHlAamtFaF2geadEaLIDCxYE/view?usp=drivesdk">CV</a> here.
           </p>
         </div>
         <TextCloud/>
